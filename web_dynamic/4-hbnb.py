@@ -26,7 +26,7 @@ def teardown_db(exc):
     storage.close()
 
 
-@app.route('/3-hbnb/')
+@app.route('/4-hbnb/')
 def hbnb_load_data(query_id=None):
     """
     handles request to custom template with states, cities & amentities
@@ -48,7 +48,7 @@ def hbnb_load_data(query_id=None):
         'users': users,
         'cache_id': cache_id
     }
-    return render_template('3-hbnb.html', **context)
+    return render_template('4-hbnb.html', **context)
 
 
 if __name__ == "__main__":
